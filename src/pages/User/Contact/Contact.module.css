@@ -1,0 +1,124 @@
+.content {
+  position: relative;
+}
+.background {
+  -webkit-filter: brightness(40%);
+  min-height: 400px;
+  margin-inline: auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.background-content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  color: white;
+}
+.title-content {
+  text-align: center;
+}
+.text-content {
+  text-align: center;
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.text-content a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.text-content a:hover {
+  color: rgb(0, 6, 90);
+}
+.content-bottom {
+  margin-inline: auto;
+  max-width: 1200px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.title-contact {
+  border-bottom: 1px solid rgb(170, 170, 170);
+  padding: 5px 0px;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.maps {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+.content-last {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .content-last {
+    display: inline;
+  }
+  .content-bottom {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .content-last {
+    display: inline;
+  }
+  .maps {
+    width: 360px;
+    height: 450px;
+    border: 0;
+  }
+  .form-input {
+    width: 390px;
+   
+  }
+  .form-input .field-input {
+    width: 360px;
+    margin: 5px 0px;
+    padding: 10px 15px;
+  }
+  .form-input .button-send {
+    width: 360px;
+    padding: 10px 0px;
+    background-color: transparent;
+    border: 1px solid rgb(141, 141, 141);
+  }
+}
+.title-place {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.place {
+  max-width: 600px;
+}
+.text-place {
+  padding: 5px 0px;
+  font-size: 1.4rem;
+}
+.form-input {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+.field-input {
+  width: 600px;
+  margin: 5px 0px;
+  padding: 10px 15px;
+}
+.button-send {
+  padding: 10px 0px;
+  background-color: transparent;
+  border: 1px solid rgb(141, 141, 141);
+}
+.button-send:hover {
+  background-color: black;
+  color: white;
+}

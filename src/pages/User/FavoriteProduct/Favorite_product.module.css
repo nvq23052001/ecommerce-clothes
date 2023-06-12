@@ -1,0 +1,258 @@
+.breadcrumb {
+  height: 300px;
+  padding: 30px px 0;
+  background: url(//theme.hstatic.net/200000366789/1000977522/14/breadcrumb_bg2.png?v=150);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.breadcrumb__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.breadcrumb__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+}
+.breadcrumb__wrapper {
+  text-align: center;
+  color: #fff;
+}
+
+.breadcrumb__title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.breadcrumb__back,
+.breadcrumb__desc {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.breadcrumb__back:hover {
+  color: #000000;
+}
+
+/* Container */
+.collection {
+  padding: 30px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0 30px;
+}
+
+.inner {
+  display: flex;
+}
+
+.sidebar {
+  color: #000000;
+  flex-basis: 25%;
+  margin-right: 50px;
+}
+.product {
+  flex: 1;
+  color: #000000;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.product__title {
+  margin-bottom: 20px;
+}
+
+.product__content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+/* Sidebar */
+.sidebar__wrapper {
+  margin-top: 30px;
+}
+
+.sidebar__content {
+  width: 100%;
+}
+
+.sort-by {
+  padding: 10px 15px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-bottom: 0px;
+}
+
+.sort-by-text {
+  text-align: left;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.sidebar-sort {
+  padding: 15px;
+  border: 1px solid #eee;
+  border-bottom: 0px;
+}
+
+.side-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion {
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border: none;
+}
+
+.panel {
+  max-height: 289px;
+}
+
+.filter-price {
+  padding: 15px 0px 0px 0px;
+  list-style: none outside;
+  margin-left: 0;
+}
+
+.filter-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: none;
+  border: 1px solid #dedede;
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.filter-label {
+  display: flex;
+}
+.filter-span {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.filter-item {
+  margin-bottom: 20px;
+}
+
+.checked:after {
+  content: '\2714';
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  outline: none;
+  color: #d499c4;
+}
+
+.filter-material {
+  padding: 15px 0px 0px 0px;
+  list-style: none outside;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product__wrapper {
+  border: 1px solid #cccccc;
+}
+
+.product__image {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.product__link {
+  grid-column: 1/5;
+  grid-row: 1/5;
+}
+
+.sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 40px;
+  height: 20px;
+  background-color: #d30000;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  z-index: 2;
+}
+
+.sale-percent {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.product__img {
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+.product__img:hover {
+  transform: scale(1.1);
+}
+
+.product__name {
+  margin-top: 5px;
+  padding: 0 5px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.price__promotion,
+.price__main {
+  padding: 0 8px;
+  font-size: 1.4rem;
+}
+
+.price__promotion {
+  color: #d30000;
+}
+.price__main {
+  text-decoration: line-through;
+}

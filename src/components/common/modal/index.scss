@@ -1,0 +1,36 @@
+.Modal {
+  .MuiDialog-paper {
+    padding: 24px;
+    margin: 0;
+  }
+
+  .MuiDialogTitle-root {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cl-secondary);
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+}
+
+.Modal-close {
+  position: absolute;
+  font-size: 18px;
+  top: 26px;
+  right: 24px;
+  cursor: pointer;
+  color: #666 !important;
+
+  &:hover {
+    color: #666;
+  }
+}
+
+.text-hightlight {
+  font-weight: 700;
+  color: var(--cl-primary);
+}

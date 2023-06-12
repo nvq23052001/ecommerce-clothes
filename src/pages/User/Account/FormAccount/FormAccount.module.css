@@ -1,0 +1,129 @@
+.container {
+  background-color: rgb(238, 238, 238);
+}
+
+.content {
+  padding: 20px 0px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.title-top {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.title-top p {
+  color: rgb(68, 68, 68);
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.avt {
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-avt {
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: contain;
+  margin-inline: auto;
+  border: 1px solid #868686;
+  max-width: 190px;
+}
+
+.image {
+  padding: 5px;
+  max-width: 180px;
+}
+
+.input-name {
+  max-width: 800px;
+  margin: 15px 0px;
+}
+.data-input {
+  font-size: 1.6rem;
+  color: #5a5a5a;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  padding: 12px;
+  max-width: 800px;
+}
+
+.group-btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.back {
+  border: #858585;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: ease-in-out 0.4s;
+}
+.back:hover {
+  border: rgb(122, 60, 238);
+  background-color: rgb(122, 60, 238);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.save {
+  color: white;
+  border: #425cf1;
+  background-color: #425cf1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+.save:hover {
+  background-color: #021ebe;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: column;
+}
+.location {
+  margin-top: 5px;
+  text-align: end;
+}
+.location:hover {
+  text-decoration: underline;
+}
+.validate-input {
+  color: red;
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    max-width: 768px;
+    padding: 15px 10px;
+  }
+  .data-input {
+    max-width: 748px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .image {
+    padding: 5px;
+    max-width: 110px;
+  }
+  /* .camera {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+  } */
+}

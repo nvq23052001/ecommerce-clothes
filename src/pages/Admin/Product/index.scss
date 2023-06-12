@@ -1,0 +1,20 @@
+.ProductAdd {
+  max-width: 1200px;
+  margin: 0 auto;
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between;
+    .left {
+      width: calc(100% - 420px);
+    }
+    .right {
+      width: 400px;
+    }
+  }
+  &-button {
+    text-align: right;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --danger: '#dc3545';
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html:has(.font-initial) {
+  font-size: 100%;
+}
+
+body:not:has(.font-initial) {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-rendering: optimizeSpeed;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}

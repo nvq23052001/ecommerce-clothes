@@ -1,0 +1,321 @@
+
+.AdminLayout {
+  min-height: 100vh;
+  display: flex;
+  color: var(--cl-secondary);
+  background-color: #f4f7fa;
+
+  // .TabWrapper {
+  //   // border: 1px solid rgba(0, 0, 0, 0.1);
+  //   // padding: 16px 24px 24px;
+  //   // border-radius: 10px;
+  //   // box-shadow: #919eab2d 0px 0px 2px 1px;
+  // }
+
+  .MuiTabs-root {
+    .MuiButtonBase-root {
+      text-transform: initial;
+      font-size: 14px;
+    }
+  }
+}
+
+.AdminMain {
+  flex-grow: 1;
+  width: calc(100% - 24px);
+  overflow-x: auto;
+}
+
+.AdminContainer {
+  padding: 50px 35px 20px;
+}
+
+.AdminSidebar {
+  transition: margin-left 0.3s ease;
+  position: relative;
+  margin-left: -270px;
+  width: 290px;
+  min-width: 290px;
+  color: var(--cl-secondary);
+  background-color: white;
+  box-shadow: rgba(159, 162, 191, 0.18) 2px 0px 3px, rgba(159, 162, 191, 0.32) 1px 0px 1px;
+
+  &-wrapper {
+    position: fixed;
+    width: 290px;
+  }
+
+  &-scroll {
+    height: 100vh;
+    padding-bottom: 30px;
+
+    .simplebar-track {
+      width: 4px !important;
+    }
+
+    &.disabled {
+      .simplebar-content-wrapper {
+        overflow: hidden !important;
+      }
+
+      .simplebar-track {
+        display: none;
+      }
+    }
+  }
+
+  &-collapse {
+    position: absolute;
+    right: -14px;
+    top: 56px;
+    padding: 0;
+    z-index: 9;
+
+    button {
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+      border-radius: 50%;
+      padding: 0;
+    }
+  }
+
+  &.open {
+    margin-left: 0;
+  }
+
+  &.close {
+    .AdminSidebar-scroll {
+      overflow-y: hidden;
+    }
+  }
+
+  &-avatar {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+.NavSection {
+  &-item {
+    height: 56px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--cl-secondary);
+    padding: 8px 12px;
+    cursor: pointer;
+
+    &.small {
+      height: 42px;
+    }
+
+    &:hover:not(.active) {
+      background-color: rgba(145, 158, 171, 0.08) !important;
+      color: #394959;
+    }
+
+    &.active,
+    &.active:hover {
+      background-color: #1976d21f;
+      color: var(#1976d2);
+
+      &::before {
+        top: 0px;
+        right: 0px;
+        width: 3px;
+        bottom: 0px;
+        content: '';
+        position: absolute;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #1976d2;
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+      margin-bottom: -6px;
+    }
+
+    &.first {
+      margin-top: -8px;
+    }
+
+    i {
+      font-size: 24px;
+      margin-right: 12px;
+      width: 28px;
+      display: flex;
+      justify-content: center;
+      margin-left: 10px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 13px;
+    }
+  }
+
+  &-sub {
+    padding-left: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 16px;
+      margin-right: 2px !important;
+    }
+  }
+}
+
+.AdminContent {
+  &-checkBox {
+    .MuiCheckbox-root {
+      margin: 0 4px 1px -8px;
+    }
+  }
+
+  .btnWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between;
+
+    .btnWrapper {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    .left {
+      width: calc(100% - 420px);
+    }
+
+    .right {
+      width: 400px;
+    }
+
+    &.small {
+      .left {
+        width: calc(100% - 340px);
+      }
+
+      .right {
+        margin-top: 0px;
+        width: 320px;
+      }
+    }
+
+    &.big {
+      .left {
+        width: calc(100% - 470px);
+      }
+
+      .right {
+        margin-top: 0px;
+        width: 450px;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      &.small,
+      &.big {
+        .left {
+          width: 100%;
+        }
+
+        .right {
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+
+      .left {
+        width: 100%;
+      }
+
+      .right {
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .AdminContainer {
+    padding: 32px 16px 16px;
+  }
+
+  .AdminSidebar {
+    position: fixed;
+    z-index: 3;
+
+    &-wrapper {
+      background-color: white;
+      box-shadow: rgba(159, 162, 191, 0.18) 2px 0px 3px, rgba(159, 162, 191, 0.32) 1px 0px 1px;
+    }
+
+    &-scroll {
+      background-color: white;
+    }
+
+    margin-left: -294px;
+
+    &-collapse {
+      right: -36px;
+    }
+
+    &.open {
+      .AdminSidebar-collapse {
+        right: -14px;
+      }
+    }
+  }
+}
+
+.AdminFormControl {
+  padding: 14px 14px 6px 14px;
+  font-size: 13.5px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  min-height: 62px;
+  margin-bottom: 24px;
+
+  .MuiChip-root {
+    margin: 0 8px 8px 0;
+  }
+
+  &.scroll {
+    overflow: auto;
+
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background-color: #b5b6b700;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: #c2c3c47f;
+    }
+  }
+
+  &.invalid {
+    border-color: var(--cl-error);
+  }
+}

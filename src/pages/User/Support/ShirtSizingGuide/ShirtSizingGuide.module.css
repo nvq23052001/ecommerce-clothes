@@ -1,0 +1,45 @@
+.content {
+  position: relative;
+}
+.background {
+  -webkit-filter: brightness(40%);
+  min-height: 400px;
+  margin-inline: auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.background-content {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  z-index: 30;
+  color: white;
+}
+.text-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+.text-content a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.text-content a:hover {
+  color: rgb(0, 6, 90);
+}
+.content-bottom {
+  position: relative;
+  width: 1200px;
+  margin-inline: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.title-bottom {
+  font-size: 2.4rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #969696;
+}

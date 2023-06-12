@@ -1,0 +1,105 @@
+.content {
+  position: relative;
+}
+.background {
+  -webkit-filter: brightness(40%);
+  min-height: 400px;
+  margin-inline: auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.background-content {
+  position: absolute;
+  top: 13%;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 30;
+  color: white;
+}
+.text-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+.text-content a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.text-content a:hover {
+  color: rgb(0, 6, 90);
+}
+.content-bottom {
+  position: relative;
+  width: 1200px;
+  margin-inline: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.title-bottom {
+  font-size: 2.4rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #969696;
+}
+.title {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.text {
+  margin: 10px 0px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.store {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.address-store {
+  padding-left: 30px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.address-store:first-child {
+  margin-top: 20px;
+}
+.infor {
+  font-size: 1.4rem;
+  margin: 8px 0px;
+  line-height: 1.6;
+}
+.text-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.title-infor {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  line-height: 1.6;
+  margin-left: 40px;
+}
+.text-infor {
+  margin: 5px 0px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-left: 80px;
+  font-style: italic;
+}
+.thanks {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.name-company {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+}

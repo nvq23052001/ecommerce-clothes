@@ -1,0 +1,89 @@
+.AdminAuthLayout {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf1f5;
+  display: flex;
+  align-items: center;
+
+  &-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 64px;
+  }
+
+  &-card {
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: #919eab4d 0px 4px 8px 0px, #919eab4d 0px 10px 20px -4px;
+  }
+
+  &-header {
+    display: flex;
+    margin-bottom: 24px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h2 {
+      margin-left: 16px;
+      color: var(--cl-secondary);
+    }
+
+    button {
+      left: 24px;
+      position: absolute;
+      width: 40px !important;
+      min-width: 40px !important;
+      border-radius: 99px;
+      height: 40px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-logo {
+    width: 400px;
+    margin: 30px;
+  }
+
+  &-label {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--cl-secondary);
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
+
+  &-button-link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -16px;
+    margin-bottom: 24px;
+
+    button {
+      text-decoration: underline;
+      outline: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: var(--cl-primary);
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .AdminAuthLayout {
+    &-logo {
+      width: 270px;
+    }
+  }
+}

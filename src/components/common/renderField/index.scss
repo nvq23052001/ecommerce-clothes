@@ -1,0 +1,17 @@
+.RenderField {
+  &-field {
+    margin-bottom: 12px;
+    span {
+      font-weight: 100;
+    }
+  }
+
+  &-label {
+    margin-top: 10px;
+    margin-right: 12px;
+
+    &.small {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+input {
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    transition: background-color 5000000s ease-in-out 0s;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.6) !important;
+    opacity: 1 !important;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.modal-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--cl-primary);
+}
+
+.version {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 99999;
+  padding: 5px 15px;
+  border-radius: 100px;
+  background-color: white;
+  font-weight: 500;
+  box-shadow: 0 1px 8px rgba(153, 153, 153, 0.5);
+  font-size: 15px;
+}
+
+.icon-search {
+  background-image: url('../images/search.svg');
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+button {
+  white-space: nowrap;
+
+  &.Mui-disabled {
+    opacity: 0.5;
+
+    &.MuiButton-textPrimary {
+      color: var(--cl-primary) !important;
+    }
+
+    &.MuiButton-containedPrimary {
+      color: white !important;
+      background-color: var(--cl-primary);
+    }
+
+    &.MuiButton-containedError {
+      color: white !important;
+      background-color: var(--cl-error);
+    }
+  }
+}
+
+.MuiCheckbox-root.Mui-checked.Mui-disabled {
+  color: var(--cl-primary);
+  opacity: 0.5;
+}
+
+.top-label {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--cl-secondary);
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.MuiDialogActions-root.MuiDialogActions-spacing {
+  padding: 16px 0 0 8px;
+
+  &.pt-0 {
+    padding-top: 0;
+  }
+}
+
+.btn-refresh {
+  font-size: 18px !important;
+  min-width: 36px !important;
+  width: 36px !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+
+  i {
+    margin-right: 0 !important;
+  }
+}
+
+.dark {
+  color: var(--cl-dark);
+}
+
+.FormContainer {
+  max-height: calc(95vh - 200px);
+
+  & > * {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// a {
+//   text-decoration: none;
+//   color: var(--cl-primary);
+//   transition: all 0.3s ease;
+
+//   &:hover {
+//     color: #03a9f4 !important;
+//   }
+// }

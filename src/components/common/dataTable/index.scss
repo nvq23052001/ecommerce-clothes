@@ -1,0 +1,264 @@
+.DataTable {
+  font-size: 14px;
+  font-weight: 500;
+  &-header {
+    padding: 0 20px 6px 20px;
+    display: flex;
+    align-items: center;
+
+    .MuiOutlinedInput-input:read-only {
+      cursor: pointer;
+    }
+
+    [class*='MuiOutlinedInput-root'],
+    [class*='MuiInputLabel-root'] {
+      font-size: 14px;
+      height: 36px;
+      border-radius: 6px;
+      min-width: 80px;
+      max-width: 200px;
+      font-weight: 500;
+    }
+
+    .MuiButton-root {
+      height: 36px;
+      text-transform: none;
+
+      i {
+        margin-right: 8px;
+      }
+    }
+
+    .space-2 {
+      & > * {
+        margin-right: 24px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .space-2-left {
+      & > * {
+        margin-left: 24px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .secondary {
+      color: var(--cl-secondary);
+    }
+  }
+  &-toolbar {
+    div {
+      font-size: 16px;
+    }
+    button svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &-table {
+    position: relative;
+
+    th {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__sort-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      i {
+        margin-left: 4px;
+        visibility: hidden;
+      }
+
+      &:hover {
+        i {
+          visibility: visible;
+          color: #777;
+        }
+      }
+
+      &.active {
+        i {
+          visibility: visible;
+          color: var(--cl-secondary);
+        }
+      }
+
+      &.asc {
+        i {
+          transform: rotateZ(180deg);
+        }
+      }
+    }
+  }
+
+  &-loading {
+    width: 100%;
+
+    td {
+      color: #777;
+      border-bottom: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &.has-items {
+      position: absolute;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      top: 0;
+      left: 0;
+    }
+
+    &.no-items {
+      min-height: 200px;
+
+      td {
+        min-height: 200px;
+      }
+    }
+  }
+
+  .Row {
+    &-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      object-fit: contain;
+    }
+
+    &-image {
+      width: 80px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+
+    &-images {
+      width: 90px;
+      height: 48px;
+
+      img {
+        width: 100%;
+        border-radius: 4px;
+        height: 100%;
+      }
+
+      &__big {
+        width: 60px;
+        height: 48px;
+        padding: 1px 2px 1px 0;
+      }
+
+      &__small {
+        width: 30px;
+        height: 24px;
+        padding: 1px 0;
+      }
+    }
+
+    &-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        min-width: 28px;
+        width: 28px;
+        height: 28px;
+        margin: 0;
+      }
+    }
+  }
+
+  .ChangePageSize {
+    height: 25px;
+    width: 80px;
+    font-size: 14px !important;
+    font-weight: 500;
+  }
+
+  .Pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 36px;
+
+    &-right {
+      position: absolute;
+      right: 14px;
+
+      &.disabled {
+        opacity: 0.5;
+      }
+    }
+
+    .Mui-disabled.MuiPaginationItem-root.Mui-selected {
+      color: white;
+      background-color: var(--cl-primary);
+      opacity: 0.5;
+    }
+
+    @media screen and (max-width: 1400px) {
+      justify-content: flex-start;
+      padding-left: 24px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0px;
+
+      &-right {
+        position: static !important;
+        margin: 16px 0 4px;
+      }
+    }
+  }
+}
+
+.ChangePageSize-item {
+  height: 22px;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.TableSelect-item {
+  height: 36px;
+  font-size: 14px !important;
+  font-weight: 500;
+
+  &.active {
+    background-color: var(--cl-primary-20) !important;
+  }
+}
+
+.TableSelect-arrow {
+  color: rgba(0, 0, 0, 0.54);
+  margin-right: -7px;
+
+  &.focus {
+    transform: rotate(180deg);
+  }
+}
+
+.TableSelect-readOnly {
+  .MuiOutlinedInput-root {
+    cursor: pointer !important;
+
+    input {
+      cursor: pointer !important;
+    }
+  }
+}
+
+table {
+  table-layout: fixed;
+}
